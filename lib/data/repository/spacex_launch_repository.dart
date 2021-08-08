@@ -1,3 +1,5 @@
+import 'package:spacex_latest_launch/data/models/launch_model.dart';
+
 abstract class SpaceXLaunchRepository{
-  // todo create data getter and decoder methods
+  Future<LaunchModel> getLatestLaunch();
 }
