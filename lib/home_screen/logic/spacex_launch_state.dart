@@ -15,7 +15,10 @@ class SpacexLaunchLoading extends SpacexLaunchState {
 }
 
 class SpacexLaunchLoaded extends SpacexLaunchState {
-  // todo add model of api data response
+
+  final LaunchModel launchModel;
+  const SpacexLaunchLoaded(this.launchModel);
+
   @override
   List<Object> get props => [];
 }
