@@ -12,5 +12,12 @@ class SpacexLaunchCubit extends Cubit<SpacexLaunchState> {
 
   final SpaceXLaunchRepository _launchRepository;
 
-  Future<void> fetchLatestLaunchData() async {}
+  Future<void> fetchLatestLaunchData() async {
+    try {
+      final launchModel = await _launchRepository.getLatestLaunch();
+      emit(SpacexLaunchLoaded(launchModel));
+    } catch (e) {
+      emit(SpacexLaunchError(e.toString()));
+    }
+  }
 }
