@@ -17,6 +17,27 @@ It is a mobile application project that shows the details of the latest mission 
 ![MVVM](https://koenig-media.raywenderlich.com/uploads/2018/04/MVVM_Diagram-480x197.png)
 
 
+## API Usage
+
+#### Base
+
+```http
+  https://api.spacexdata.com
+```
+
+#### Fetch Latest Mission Information
+
+```http
+  GET /v4/launches/latest
+```
+
+## Screenshots
+
+HomeScreen
+|:-------------------------:|
+![SS1](https://i.ibb.co/h9nBwDk/Screenshot-1629190571.png)
+
+
 ## Licence [MIT](https://choosealicense.com/licenses/mit/)
 
 ```
@@ -42,3 +63,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+
